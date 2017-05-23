@@ -1,0 +1,9 @@
+{% if blog_list %}
+    {% for post in blog_list %}
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.timestamp }}</p>
+        <p>{{ post.body }}</p>
+    {% endfor %}
+{% else %}
+    <p>blog are available </p>
+{% endif %}
